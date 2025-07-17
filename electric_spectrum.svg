@@ -18,7 +18,7 @@
       <stop offset="0%"   stop-color="#4B004B"/>     <!-- 暗紫黒（接続色） -->
       <stop offset="10%"  stop-color="#2B002B"/>     <!-- 黒寄り -->
       <stop offset="30%"  stop-color="#080008"/>     <!-- より黒寄り -->
-      <stop offset="100%" stop-color="#000000"/>     <!-- 完全な黒 -->
+      <stop offset="40%" stop-color="#000000"/>     <!-- 完全な黒 -->
     </linearGradient>
   </defs>
 
