@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="30">
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="120">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
-      <!-- 左側 0%〜25% を完全透明 -->
       <stop offset="0%"    stop-color="transparent"/>
       <stop offset="25%"   stop-color="transparent"/>
 
-      <!-- 残り 75% に従来9色を等間隔配置 -->
-      <stop offset="33.33%" stop-color="#8B0000"/>   <!-- 赤外線（深赤） -->
+      <!-- 色分布は25%〜100%の範囲に再配置 -->
+      <stop offset="33.33%" stop-color="#8B0000"/>   <!-- 深赤 -->
       <stop offset="41.67%" stop-color="#FF0000"/>   <!-- 赤 -->
       <stop offset="50.00%" stop-color="#FFA500"/>   <!-- 橙 -->
       <stop offset="58.33%" stop-color="#FFFF00"/>   <!-- 黄 -->
@@ -17,5 +16,5 @@
       <stop offset="100%"   stop-color="#000000"/>   <!-- 黒 -->
     </linearGradient>
   </defs>
-  <rect x="0" y="70" width="600" height="30" fill="url(#g)"/>
+  <rect x="0" y="70" width="450" height="30" fill="url(#g)"/>
 </svg>
