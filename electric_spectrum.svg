@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="450" height="30">
   <defs>
-    <!-- 主グラデーション（左〜380dotまで） -->
-    <linearGradient id="main" x1="0%" y1="0%" x2="84.67%" y2="0%">
+    <!-- 左側 0〜380dot（約84.44%）までのスペクトル -->
+    <linearGradient id="main" x1="0%" y1="0%" x2="84.44%" y2="0%">
       <stop offset="0%"    stop-color="transparent"/>
       <stop offset="25%"   stop-color="transparent"/>
       <stop offset="33.33%" stop-color="#8B0000"/>   <!-- 深赤 -->
@@ -13,16 +13,16 @@
       <stop offset="83.33%" stop-color="#4B0082"/>   <!-- 藍 -->
     </linearGradient>
 
-    <!-- 右端グラデーション再配置（381dot〜400dot） -->
-    <linearGradient id="shifted" x1="84.67%" y1="0%" x2="88.89%" y2="0%">
-      <stop offset="0%"    stop-color="#800080"/>     <!-- 紫 -->
-      <stop offset="50%"   stop-color="#9400D3"/>     <!-- 深紫 -->
-      <stop offset="100%"  stop-color="#000000"/>     <!-- 黒 -->
+    <!-- 右側：381〜450dot（黒へのグラデーション） -->
+    <linearGradient id="blackfade" x1="84.67%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#4B004B"/>     <!-- 暗紫黒（接続色） -->
+      <stop offset="25%"  stop-color="#2B002B"/>     <!-- 黒寄り -->
+      <stop offset="50%"  stop-color="#080008"/>     <!-- より黒寄り -->
+      <stop offset="100%" stop-color="#000000"/>     <!-- 完全な黒 -->
     </linearGradient>
   </defs>
 
-  <!-- グラデーション本体 -->
-  <rect x="0"   y="0" width="381" height="30" fill="url(#main)"/>     <!-- ～380dot -->
-  <rect x="381" y="0" width="20"  height="30" fill="url(#shifted)"/>  <!-- 381～400dot -->
-  <rect x="401" y="0" width="49"  height="30" fill="#000000"/>        <!-- 401～450dot：黒 -->
+  <!-- グラデーション適用範囲 -->
+  <rect x="0"   y="0" width="380" height="30" fill="url(#main)"/>
+  <rect x="380" y="0" width="70"  height="30" fill="url(#blackfade)"/>
 </svg>
