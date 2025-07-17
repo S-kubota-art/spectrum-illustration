@@ -16,8 +16,8 @@
     <!-- 右側：381〜450dot（黒へのグラデーション） -->
     <linearGradient id="blackfade" x1="84.67%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#4B004B"/>     <!-- 暗紫黒（接続色） -->
-      <stop offset="25%"  stop-color="#2B002B"/>     <!-- 黒寄り -->
-      <stop offset="50%"  stop-color="#080008"/>     <!-- より黒寄り -->
+      <stop offset="10%"  stop-color="#2B002B"/>     <!-- 黒寄り -->
+      <stop offset="30%"  stop-color="#080008"/>     <!-- より黒寄り -->
       <stop offset="100%" stop-color="#000000"/>     <!-- 完全な黒 -->
     </linearGradient>
   </defs>
