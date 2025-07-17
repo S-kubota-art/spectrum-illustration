@@ -6,6 +6,7 @@
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="transparent"/>
+      <stop offset="25%"   stop-color="transparent"/>
       <stop offset="30%"  stop-color="#8B0000"/>
       <stop offset="35%"  stop-color="#FF0000"/>
       <stop offset="40%"  stop-color="#FFA500"/>
@@ -16,6 +17,7 @@
       <stop offset="65%"  stop-color="#EE82EE"/>
       <stop offset="70%"  stop-color="#9400D3"/>
       <stop offset="75%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#000000"/>
     </linearGradient>
   </defs>
   <rect x="0" y="70" width="600" height="30" fill="url(#g)"/>
