@@ -1,23 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="450" height="120">
-  <style>
-    text { font: bold 24px 'Meiryo', sans-serif; fill: #000; }
-  </style>
-  <text x="50%" y="30" text-anchor="middle">電磁波</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="30">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <!-- 左側 0%〜25% を完全透明 -->
       <stop offset="0%"    stop-color="transparent"/>
-      <stop offset="10%"   stop-color="#8B0000"/>   <!-- 深赤 -->
-      <stop offset="20%"   stop-color="#FF0000"/>   <!-- 赤 -->
-      <stop offset="30%"   stop-color="#FFA500"/>   <!-- 橙 -->
-      <stop offset="40%"   stop-color="#FFFF00"/>   <!-- 黄 -->
-      <stop offset="50%"   stop-color="#008000"/>   <!-- 緑 -->
-      <stop offset="60%"   stop-color="#0000FF"/>   <!-- 青 -->
-      <stop offset="70%"   stop-color="#4B0082"/>   <!-- 藍 -->
-      <stop offset="80%"   stop-color="#800080"/>   <!-- 紫（濃紫） -->
-      <stop offset="86%"   stop-color="#9400D3"/>   <!-- 深紫（紫外線） -->
-      <stop offset="93%"   stop-color="#4B004B"/>   <!-- 紫黒（中間） -->
-      <stop offset="100%"  stop-color="#000000"/>   <!-- 黒（X線） -->
+      <stop offset="25%"   stop-color="transparent"/>
+
+      <!-- 残り 75% に従来9色を等間隔配置 -->
+      <stop offset="33.33%" stop-color="#8B0000"/>   <!-- 赤外線（深赤） -->
+      <stop offset="41.67%" stop-color="#FF0000"/>   <!-- 赤 -->
+      <stop offset="50.00%" stop-color="#FFA500"/>   <!-- 橙 -->
+      <stop offset="58.33%" stop-color="#FFFF00"/>   <!-- 黄 -->
+      <stop offset="66.67%" stop-color="#008000"/>   <!-- 緑 -->
+      <stop offset="75.00%" stop-color="#0000FF"/>   <!-- 青 -->
+      <stop offset="83.33%" stop-color="#4B0082"/>   <!-- 藍 -->
+      <stop offset="91.67%" stop-color="#9400D3"/>   <!-- 深紫 -->
+      <stop offset="100%"   stop-color="#000000"/>   <!-- 黒 -->
     </linearGradient>
   </defs>
-  <rect x="0" y="70" width="450" height="30" fill="url(#g)"/>
+  <rect x="0" y="70" width="600" height="30" fill="url(#g)"/>
 </svg>
